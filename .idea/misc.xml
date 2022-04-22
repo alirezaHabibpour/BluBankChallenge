@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1225" />
+        <entry key="app/src/main/res/drawable/ic_credit_card.xml" value="0.203" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1035" />
+        <entry key="app/src/main/res/drawable/ic_transfer.xml" value="0.203" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.6346604215456675" />
+        <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.6346604215456675" />
+        <entry key="common/src/main/res/layout/fragment_base_layout.xml" value="0.1557377049180328" />
+        <entry key="common/src/main/res/layout/layout_status_dialog_common_section.xml" value="0.17239583333333333" />
+        <entry key="common/src/main/res/layout/layout_status_dialog_single_button.xml" value="0.10371376811594203" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_bottom_sheet.xml" value="0.203" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_credit_card_action_button.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_credit_card_back.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_credit_card_front.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_credit_card_progress.xml" value="0.203" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_credit_card_progress_action_button.xml" value="0.203" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_credit_card_progress_setting_item.xml" value="0.203" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_credit_card_setting.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_credit_card_setting_item.xml" value="0.2865" />
+        <entry key="features/creditCard/src/main/res/drawable/bg_help_icon.xml" value="0.203" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_arrow.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_bank_but_lovely.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_block.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_blue_bank_logo_type.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_export.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_freeze.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_help.xml" value="0.203" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_key.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_protect.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/drawable/ic_rotate_bank_card.xml" value="0.1035" />
+        <entry key="features/creditCard/src/main/res/layout/bsdf_credit_card.xml" value="0.698916575947746" />
+        <entry key="features/creditCard/src/main/res/layout/fragment_credit_card.xml" value="0.4940833532222184" />
+        <entry key="features/creditCard/src/main/res/layout/layout_credit_card_content.xml" value="0.4052532833020638" />
+        <entry key="features/creditCard/src/main/res/layout/layout_credit_card_progress.xml" value="0.5070422535211268" />
+        <entry key="features/creditCard/src/main/res/layout/layout_credit_cord_bottom_sheet.xml" value="0.3561643835616438" />
+        <entry key="features/exchange/src/main/res/drawable/ic_arrow_selector.xml" value="0.133" />
+        <entry key="features/exchange/src/main/res/drawable/ic_arrow_up.xml" value="0.133" />
+        <entry key="features/exchange/src/main/res/drawable/ic_receive.xml" value="0.133" />
+        <entry key="features/exchange/src/main/res/drawable/rec_submit_button.xml" value="0.133" />
+        <entry key="features/exchange/src/main/res/layout/activity_exchange.xml" value="0.6346604215456675" />
+        <entry key="features/exchange/src/main/res/layout/fragment_convert.xml" value="0.4357298474945534" />
+        <entry key="features/exchange/src/main/res/layout/fragment_credit_card.xml" value="0.5469798657718121" />
+        <entry key="features/exchange/src/main/res/layout/item_balance.xml" value="0.9467697143554688" />
+        <entry key="features/login/src/main/res/drawable/custom_progress_bar.xml" value="0.1" />
+        <entry key="features/login/src/main/res/drawable/ic_baseline_lock_24px.xml" value="0.1" />
+        <entry key="features/login/src/main/res/drawable/ic_call_black_24dp.xml" value="0.1" />
+        <entry key="features/login/src/main/res/drawable/rec_input_bacground.xml" value="0.1225" />
+        <entry key="features/login/src/main/res/drawable/rec_secondary_color_with_border.xml" value="0.1" />
+        <entry key="features/login/src/main/res/drawable/rectangle_sroke_primary_color_with_corner.xml" value="0.1" />
+        <entry key="features/login/src/main/res/drawable/wave.xml" value="0.1" />
+        <entry key="features/login/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="features/login/src/main/res/layout/custom_button_rell.xml" value="0.24427083333333333" />
+        <entry key="features/login/src/main/res/layout/dialog_gender.xml" value="0.1" />
+        <entry key="features/login/src/main/res/layout/fragment_forget_password.xml" value="0.1" />
+        <entry key="features/login/src/main/res/layout/fragment_login.xml" value="0.33538818359375" />
+        <entry key="features/login/src/main/res/layout/fragment_new_password.xml" value="0.1" />
+        <entry key="features/login/src/main/res/layout/fragment_register.xml" value="0.37992831541218636" />
+        <entry key="features/login/src/main/res/layout/fragment_verify_code.xml" value="0.5230901194671729" />
+        <entry key="features/login/src/main/res/layout/welcome_header.xml" value="0.8453978474934897" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

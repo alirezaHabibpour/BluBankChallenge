@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorRed">#E11947</color>
+    <color name="colorPrimary">#559CE8</color>
+    <color name="colorSecondary">#E7F1FD</color>
+    <color name="colorCreditCardBack">#B8D4F5</color>
+    <color name="colorGreen">#57E41A</color>
+    <color name="colorGrey">#DAD2D2</color>
+    <color name="colorButton">#2D80D3</color>
+
+</resources>

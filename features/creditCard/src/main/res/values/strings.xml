@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="card">کارت</string>
+    <string name="hint_bank_card_name">داریوش nحبیب پور</string>
+    <string name="str_expire">EXP</string>
+    <string name="hint_exp_date">1402/03</string>
+    <string name="str_cvv2">CVV2</string>
+    <string name="hint_cvv2">233</string>
+    <string name="str_dynamic_pass">رمز دوم پویا</string>
+    <string name="str_card_number_sheba">شماره کارت و شبا</string>
+    <string name="str_setting">تنظیمات</string>
+    <string name="str_freeze_card">مسدود سازی موقت</string>
+    <string name="str_freeze_card_description">بلو کارت را به صورت موقت غیر فعال کنید</string>
+    <string name="str_security_setting">تنظیمات امنیتی</string>
+    <string name="str_security_setting_description">تغییر و دریافت رمز مجدد بلو بانک</string>
+    <string name="str_block">غیر فعال کردن</string>
+    <string name="str_block_description">مسدود سازی بلو کارت در صورت مفقودی و...</string>
+</resources>

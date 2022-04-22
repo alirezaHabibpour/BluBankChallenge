@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">data</string>
+    <string name="dialog_check_box_label">دیگر این پیام را نشانم نده</string>
+    <string name="alertsheet_state_error">خطا</string>
+    <string name="alertsheet_state_warning">هشدار</string>
+    <string name="alertsheet_state_success">اطلاع</string>
+    <string name="alertsheet_state_notice">توجه</string>
+
+    <string name="dialog_icon">dialog_icon</string>
+
+    <string name="retry_text">تلاش مجدد</string>
+
+    <string name="action_back">بازگشت</string>
+    <string name="action_confirm">تایید</string>
+    <string name="action_continue">ادامه</string>
+    <string name="action_edit">ویرایش</string>
+    <string name="action_delete">حذف</string>
+    <string name="action_done">ثبت</string>
+    <string name="action_acknowledgement">باشه</string>
+    <string name="action_understand">متوجه شدم</string>
+    <string name="action_more_data">اطلاعات بیشتر</string>
+    <string name="action_retry">تلاش دوباره</string>
+    <string name="action_cancel">انصراف</string>
+    <string name="action_guide">راهنما</string>
+    <string name="action_yes">بلی</string>
+    <string name="action_no">خیر</string>
+
+    <!-- Server Response Handler -->
+    <string name="expired_token">جلسه کاری منتضی شده است.</string>
+    <string name="token_not_found">جلسه کاری با مشکل مواجه شده است.</string>
+    <string name="invalid_token">@string/token_not_found</string>
+    <string name="invalid_requestseq">خطای 107. لطفا دوباره تلاش نمایید.</string>
+    <string name="inactive_version">این نسخه   قدیمی است و نیاز به بروز رسانی دارد.</string>
+    <string name="inactive_user">حساب کاربری شما غیر فعال شده است.</string>
+    <string name="user_not_found">اطلاعات حساب کاربری شما با مشکل مواجه شده است.</string>
+    <string name="other_server_error"> خطا به هنگام تبادل اطلاعات با سرور</string>
+    <string name="not_valid_referral_code">کاربری با کد دعوت داده شده یافت نشد</string>
+    <string name="server_connection_error">ارتباط با سرور همراه کارت برقرار نشد.</string>
+    <string name="internet_connection_error">اتصال به اینترنت برقرار نمیباشد.</string>
+    <string name="vpn_error">دسترسی از خارج کشور امکان پذیر نیست، در صورتی که از vpn استفاده می کنید آن را غیرفعال کنید.</string>
+    <string name="parse_error"> خطا به هنگام تبادل اطلاعات با سرور</string>
+    <string name="server_internal_error">خطای داخلی. انجام علمیات ممکن نشد.</string>
+    <string name="internal_app_error">خطای داخلی اپلیکیشن. لطفا با پشتیبانی تماس بگیرید.</string>
+    <string name="logout_title">خطا</string>
+    <string name="logout">خروج</string>
+    <string name="unknown_error">خطای نامشخص</string>
+
+</resources>

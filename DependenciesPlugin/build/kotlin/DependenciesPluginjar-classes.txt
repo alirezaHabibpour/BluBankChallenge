@@ -1,0 +1,1 @@
+/Users/dapa/Desktop/bluBank/DependenciesPlugin/build/classes/kotlin/main/Deps.class:/Users/dapa/Desktop/bluBank/DependenciesPlugin/build/classes/kotlin/main/LibDependency.class:/Users/dapa/Desktop/bluBank/DependenciesPlugin/build/classes/kotlin/main/Versions.class

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_user_profile"
+        android:title="" />
+    <item
+        android:id="@+id/credit_card"
+        android:icon="@drawable/ic_credit_card"
+        android:title="" />
+    <item
+        android:id="@+id/store"
+        android:icon="@drawable/ic_store"
+        android:title="" />
+    <item
+        android:id="@+id/transactions"
+        android:icon="@drawable/ic_transfer"
+        android:title="" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="" />
+
+</menu>

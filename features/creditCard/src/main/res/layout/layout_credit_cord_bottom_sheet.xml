@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetCreditCard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bottom_sheet"
+    android:padding="@dimen/margin_small"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="@dimen/height_collapse_bottom_sheet"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/margin_large"
+        android:layout_height="5dp"
+        android:background="@drawable/bg_credit_card_action_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/btnCreditCardDynamicPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_small"
+        android:background="@drawable/bg_credit_card_action_button"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnCreditCardExport"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            app:srcCompat="@drawable/ic_key" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/str_dynamic_pass"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnCreditCardExport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/bg_credit_card_action_button"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_small"
+        app:layout_constraintLeft_toRightOf="@id/btnCreditCardDynamicPass"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small"
+            app:srcCompat="@drawable/ic_export" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/str_card_number_sheba"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvCreditCardSettingTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="@string/str_setting"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/title_1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnCreditCardExport" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCreditCardFreeze"
+        android:layout_width="@dimen/icon_medium"
+        android:layout_height="@dimen/icon_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/bg_credit_card_setting_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCreditCardSettingTitle"
+        app:srcCompat="@drawable/ic_freeze" />
+
+    <TextView
+        android:id="@+id/tvCreditCardFreezeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_small"
+        android:text="@string/str_freeze_card"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toLeftOf="@+id/imgCreditCardFreeze"
+        app:layout_constraintTop_toTopOf="@+id/imgCreditCardFreeze" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mid_small_margin"
+        android:layout_marginRight="@dimen/margin_small"
+        android:text="@string/str_freeze_card_description"
+        app:layout_constraintRight_toLeftOf="@+id/imgCreditCardFreeze"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreditCardFreezeTitle" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/toggleCreditCardFreeze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imgCreditCardFreeze"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgCreditCardFreeze" />
+
+    <View
+        android:id="@+id/btnCreditCardFreeze"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgCreditCardFreeze"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgCreditCardFreeze" />
+    <!--    endregion  -->
+
+
+    <!-- region security -->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCreditCardSecurity"
+        android:layout_width="@dimen/icon_medium"
+        android:layout_height="@dimen/icon_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/bg_credit_card_setting_item"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCreditCardFreeze"
+        app:srcCompat="@drawable/ic_protect" />
+
+    <TextView
+        android:id="@+id/tvCreditCardSecurityTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_small"
+        android:text="@string/str_security_setting"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toLeftOf="@+id/imgCreditCardSecurity"
+        app:layout_constraintTop_toTopOf="@+id/imgCreditCardSecurity" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mid_small_margin"
+        android:layout_marginRight="@dimen/mid_small_margin"
+        android:text="@string/str_security_setting_description"
+        app:layout_constraintRight_toLeftOf="@+id/imgCreditCardSecurity"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreditCardSecurityTitle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imgCreditCardSecurity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgCreditCardSecurity"
+        app:srcCompat="@drawable/ic_arrow" />
+
+    <View
+        android:id="@+id/btnCreditCardSecurity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgCreditCardSecurity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgCreditCardSecurity" />
+    <!--    endregion  -->
+
+
+    <!-- region block -->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCreditCardBlock"
+        android:layout_width="@dimen/icon_medium"
+        android:layout_height="@dimen/icon_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@drawable/bg_credit_card_setting_item"
+        android:backgroundTint="@color/colorRed"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCreditCardSecurity"
+        app:srcCompat="@drawable/ic_block" />
+
+    <TextView
+        android:id="@+id/tvCreditCardBlockTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/mid_small_margin"
+        android:text="@string/str_block"
+        android:textColor="@color/colorRed"
+        app:layout_constraintRight_toLeftOf="@+id/imgCreditCardBlock"
+        app:layout_constraintTop_toTopOf="@+id/imgCreditCardBlock" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mid_small_margin"
+        android:layout_marginRight="@dimen/margin_small"
+        android:text="@string/str_block_description"
+        app:layout_constraintRight_toLeftOf="@+id/imgCreditCardBlock"
+        app:layout_constraintTop_toBottomOf="@+id/tvCreditCardBlockTitle" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imgCreditCardBlock"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgCreditCardBlock"
+        app:srcCompat="@drawable/ic_arrow" />
+
+    <View
+        android:id="@+id/btnCreditCardBlock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgCreditCardBlock"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imgCreditCardBlock" />
+    <!--    endregion  -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

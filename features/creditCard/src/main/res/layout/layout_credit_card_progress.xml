@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorSecondary">
+
+
+
+        <TextView
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tvCreditCardProgressTitle"
+            android:text="@string/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:padding="@dimen/margin_mini"
+            app:srcCompat="@drawable/ic_help"
+            android:background="@drawable/bg_help_icon"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="@dimen/icon_small"
+            android:layout_height="@dimen/icon_small" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clCreditCardProgress"
+            android:layout_width="@dimen/width_credit_card"
+            android:layout_height="@dimen/height_credit_card"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/bg_credit_card_progress"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCreditCardProgressTitle"
+            >
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/bg_bottom_sheet"
+        android:id="@+id/bottomSheetCreditCardProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="@dimen/height_collapse_bottom_sheet"
+        android:padding="@dimen/margin_medium"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+         <androidx.constraintlayout.widget.Group
+             android:id="@+id/groupCreditCardProgressAnimates"
+             app:constraint_referenced_ids="btnCreditCardProgressDynamicPass, btnCreditCardProgressExport,
+             imgCreditCardProgressFreeze,tvCreditCardFreezeProgressTitle,tvCreditCardFreezeProgressDescription,
+             imgCreditCardProgressSecurity,tvCreditCardProgressSecurityTitle,tvCreditCardProgressSecurityDescription,
+             imgCreditCardProgressBlock,tvCreditCardProgressBlockTitle,tvCreditCardProgressBlockDescription"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+         </androidx.constraintlayout.widget.Group>
+        <LinearLayout
+            android:layout_marginRight="@dimen/margin_small"
+            android:padding="@dimen/margin_small"
+            android:id="@+id/btnCreditCardProgressDynamicPass"
+            android:background="@drawable/bg_credit_card_progress_action_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/btnCreditCardProgressExport"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_key"
+                android:layout_width="@dimen/icon_small"
+                android:layout_height="@dimen/margin_small" />
+
+            <TextView
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:text="@string/str_dynamic_pass"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/margin_small"
+            android:padding="@dimen/margin_small"
+            android:id="@+id/btnCreditCardProgressExport"
+            android:background="@drawable/bg_credit_card_progress_action_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/btnCreditCardProgressDynamicPass"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content" >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_export"
+                android:layout_width="@dimen/margin_small"
+                android:layout_height="@dimen/margin_small" />
+
+            <TextView
+                android:visibility="invisible"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_width="wrap_content"
+                android:text="@string/str_card_number_sheba"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvCreditCardSettingProgressTitle"
+            android:layout_marginTop="30dp"
+            android:textSize="@dimen/title_1"
+            android:textColor="@color/black"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnCreditCardProgressExport"
+            android:text="@string/str_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCreditCardProgressFreeze"
+            android:layout_marginTop="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCreditCardSettingProgressTitle"
+            android:background="@drawable/bg_credit_card_progress_setting_item"
+            android:layout_width="@dimen/icon_medium"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:minWidth="@dimen/min_credit_card_title_progress"
+            android:background="@drawable/bg_credit_card_progress_action_button"
+            android:id="@+id/tvCreditCardFreezeProgressTitle"
+            android:layout_marginRight="@dimen/margin_small"
+            app:layout_constraintTop_toTopOf="@+id/imgCreditCardProgressFreeze"
+            app:layout_constraintRight_toLeftOf="@+id/imgCreditCardProgressFreeze"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCreditCardFreezeProgressDescription"
+            android:minWidth="@dimen/min_credit_card_description_width"
+            android:layout_marginRight="@dimen/margin_small"
+            android:background="@drawable/bg_credit_card_progress_action_button"
+            android:layout_marginTop="@dimen/mid_small_margin"
+            app:layout_constraintRight_toLeftOf="@+id/imgCreditCardProgressFreeze"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreditCardFreezeProgressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <!--    endregion  -->
+
+
+
+        <!-- region security -->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCreditCardProgressSecurity"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgCreditCardProgressFreeze"
+            android:background="@drawable/bg_credit_card_progress_setting_item"
+            android:layout_width="@dimen/icon_medium"
+            android:layout_height="@dimen/icon_medium" />
+
+        <TextView
+            android:id="@+id/tvCreditCardProgressSecurityTitle"
+            android:layout_marginRight="@dimen/margin_small"
+            app:layout_constraintTop_toTopOf="@+id/imgCreditCardProgressSecurity"
+            app:layout_constraintRight_toLeftOf="@+id/imgCreditCardProgressSecurity"
+            android:textColor="@color/black"
+            android:minWidth="@dimen/min_credit_card_title_progress"
+            android:background="@drawable/bg_credit_card_progress_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCreditCardProgressSecurityDescription"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_marginTop="@dimen/mid_small_margin"
+            app:layout_constraintRight_toLeftOf="@+id/imgCreditCardProgressSecurity"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreditCardProgressSecurityTitle"
+            android:minWidth="@dimen/min_credit_card_description_width"
+            android:background="@drawable/bg_credit_card_progress_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <!--    endregion  -->
+
+
+        <!-- region block -->
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCreditCardProgressBlock"
+            android:layout_marginTop="@dimen/margin_medium"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgCreditCardProgressSecurity"
+            android:background="@drawable/bg_credit_card_progress_setting_item"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tvCreditCardProgressBlockTitle"
+            android:layout_marginRight="@dimen/margin_small"
+            app:layout_constraintTop_toTopOf="@+id/imgCreditCardProgressBlock"
+            app:layout_constraintRight_toLeftOf="@+id/imgCreditCardProgressBlock"
+            android:textColor="@color/black"
+            android:minWidth="@dimen/min_credit_card_title_progress"
+            android:background="@drawable/bg_credit_card_progress_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvCreditCardProgressBlockDescription"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_marginTop="@dimen/mid_small_margin"
+            app:layout_constraintRight_toLeftOf="@+id/imgCreditCardProgressBlock"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreditCardProgressBlockTitle"
+            android:minWidth="@dimen/min_credit_card_description_width"
+            android:background="@drawable/bg_credit_card_progress_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <!--    endregion  -->
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
