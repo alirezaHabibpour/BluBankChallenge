@@ -3,6 +3,7 @@ local
 anim bottomsheet_in
 anim bottomsheet_out
 color colorPrimary
+color colorPrimaryDark
 color colorSecondary
 id back_ground_main_rel
 id back_img

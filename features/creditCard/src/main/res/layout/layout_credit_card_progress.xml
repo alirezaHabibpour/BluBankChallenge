@@ -7,16 +7,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSecondary">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:paddingTop="@dimen/margin_small"
         android:layout_height="match_parent"
         android:background="@color/colorSecondary">
 
 
 
         <TextView
+            android:textSize="@dimen/title_1"
             android:textColor="@color/black"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
